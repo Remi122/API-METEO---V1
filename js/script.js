@@ -30,5 +30,3 @@ function buttonClickGET() {
 }
 
 function buttonClickGET()
-
-
