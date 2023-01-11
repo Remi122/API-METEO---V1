@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>API METEO</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Plateforme incroyable de e-commerce">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet" />
+    <link href='https://css.gg/search.css' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+  <section class="layout">
+    
+    <div class="header">1
+        <img id="logo" src="/images/logo.png" alt="logo METEO"></img>
+    </div>
+   
+    <p id="title">API METEO</p>
+    <div class="search-box">
+        <!-- Text input -->
+        
+        <input type="text" placeholder="Recherche par ville" id="queryLoc" value="Paris,fr" class="search-box__input" />
+        <i onclick="buttonClickGET()" id="icone" class="bi bi-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+        </i>
+        
+        
+    </div>
+
+    <div class="full-background">
+
+
+        <div class="main">2
+        <div id="demoparagraph">
+            <div class="cards">
+                <article class="card">
+                    <header>
+                        <h2 id="test"></h2>
+                    </header>    
+                    <img src="balloons.jpg" alt="Hot air balloons">
+                    <div class="content">
+                        <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago. </p>
+                    </div>
+                    <footer>I have a footer!</footer>
+                    <button class="button-with-icon">
+                        <!-- Icon -->
+                         Voir la météo
+                    
+                        <!-- Label -->
+                        <div class="button-with-icon__label">...</div>
+                    </button>
+                        
+                </article>
+                        
+                 <article class="card">
+                    <header>
+                        <h2>A short heading</h2>
+                    </header>    
+                    <img src="balloons2.jpg" alt="Hot air balloons">
+                    <div class="content">
+                        <p>Short content.</p>
+                    </div>
+                    <footer>I have a footer!</footer>
+                    <button class="button-with-icon">
+                        <!-- Icon -->
+                         Voir la météo
+                    
+                        <!-- Label -->
+                        <div class="button-with-icon__label">...</div>
+                    </button>
+                </article>
+                        
+                <article class="card">
+                    <header>
+                        <h2>A longer heading in this card</h2>
+                    </header>
+                    <img src="balloons.jpg" alt="Hot air balloons">
+                    <div class="content">
+                        <p>In a curious work, published in Paris in 1863 by Delaville Dedreux, there is a
+                            suggestion for reaching the North Pole by an aerostat.</p>
+                    </div>
+                    <footer>I have a footer!</footer>
+                    <button class="button-with-icon">
+                        <!-- Icon -->
+                         Voir la météo
+                    
+                        <!-- Label -->
+                        <div class="button-with-icon__label">...</div>
+                    </button>
+                </article>
+                <article class="card">
+                    <header>
+                        <h2>A short heading</h2>
+                    </header>
+                    <img src="balloons2.jpg" alt="Hot air balloons">
+                    <div class="content">
+                        <p> The idea of reaching the North Pole by means of balloons appears to have been entertained many
+                            years ago. </p>
+                            
+                    </div>
+                    <button class="button-with-icon">
+                        <!-- Icon -->
+                         Voir la météo
+                    
+                        <!-- Label -->
+                        <div class="button-with-icon__label">...</div>
+                    </button>
+            
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="footer">3
+    <p id="title-footer">API METEO BY REMI VINEL</p>
+    </div>
+  </section>
+ 
+  <script src="/js/script.js"></script>
+  </body>
+</html>
+
