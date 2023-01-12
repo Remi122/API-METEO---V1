@@ -17,9 +17,12 @@ var callBackGetSuccess = function (data) {
    temperature.innerHTML = "Température: " + data.main.temp + "°C";
 
 
-   var iconetemp = document.getElementById('imgicone').src ;
+   var iconetemp = document.getElementById('imgicone');
    console.log(iconetemp);
-   iconetemp=data.list.weather[0].icon ;
+
+   //  iconetemp=data.weather[0].icon ;
+   
+  iconetemp.setAttribute('src' , `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
 
   })
 }
