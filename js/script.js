@@ -17,9 +17,9 @@ var callBackGetSuccess = function (data) {
    temperature.innerHTML = "Température: " + data.main.temp + "°C";
 
 
-   var iconetemp = document.getElementById('imgicone');
+   var iconetemp = document.getElementById('imgicone').src ;
    console.log(iconetemp);
-   iconetemp=data.weather[0].icon ;
+   iconetemp=data.list.weather[0].icon ;
 
   })
 }
