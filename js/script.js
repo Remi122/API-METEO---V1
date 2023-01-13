@@ -1,12 +1,19 @@
-
 var callBackGetSuccess = function (data) {
   console.log("données api", data)
   //alert("Meteo temp :" + data.main.temp);
   var btn = document.querySelector("#icone");
+
+
+  
+
   btn.addEventListener("click", () => {
+    
 
     // on ne met pas le # dans la fonction document.getElementById, c'est juste le nom d'identifiant mais 
     // par contre avec querySelector, on doit y mettre un point ou un dièse  => document.querySelector('.monClasse')
+
+
+    // RECHERCHE PERSONALISEE
     var element = document.getElementById('test');
     console.log(element);
     element.innerHTML = "Ville: " + data.name;
@@ -14,7 +21,7 @@ var callBackGetSuccess = function (data) {
 
    var temperature = document.getElementById('ptest1');
    console.log(temperature);
-   temperature.innerHTML = "Température: " + data.main.temp + "°C";
+   temperature.innerHTML = "Température: " + data.main.temp + "°C" + "  (" +data.weather[0].description+ ") ";
 
 
    var iconetemp = document.getElementById('imgicone');
@@ -24,14 +31,72 @@ var callBackGetSuccess = function (data) {
    
   iconetemp.setAttribute('src' , `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
 
+
+
   })
 }
+
+
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  m = checkTime(m);
+  document.getElementById('heure').innerHTML =
+  "Aujourd'hui: "+h + ":" + m;
+  var t = setTimeout(startTime, 500);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+ 
+
+
+function startTime2() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  m = checkTime(m);
+  document.getElementById('heure2').innerHTML =
+  "Aujourd'hui: "+h + ":" + m;
+  var t = setTimeout(startTime, 500);
+}
+startTime2();
+
+function startTime3() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  m = checkTime(m);
+  document.getElementById('heure3').innerHTML =
+  "Aujourd'hui: "+h + ":" + m;
+  var t = setTimeout(startTime, 500);
+}
+startTime3();
+
+
+function startTime4() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  m = checkTime(m);
+  document.getElementById('heure4').innerHTML =
+  "Aujourd'hui: "+h + ":" + m;
+  var t = setTimeout(startTime, 500);
+}
+startTime4();
+
+
 
 
 async function buttonClickGET() {
 
 
   var ville = document.getElementById("queryLoc").value;
+  
 
   var url = "https://api.openweathermap.org/data/2.5/weather?q=" + ville + "&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric";
 
@@ -45,6 +110,9 @@ async function buttonClickGET() {
     cache: 'default'
   };
 
+
+
+  
 
   // Fetch 
   // L'API Fetch fournit une interface pour la récupération de ressources (e.g., à travers le réseau.) 
