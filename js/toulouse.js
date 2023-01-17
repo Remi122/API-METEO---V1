@@ -20,4 +20,4 @@ fetch(apiUrl)
     //  iconetemp=data.weather[0].icon ;
     
    iconetemp4.setAttribute('src' , `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
-  });
+});

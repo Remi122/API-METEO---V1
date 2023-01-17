@@ -14,7 +14,7 @@ fetch(apiUrl)
     // On affiche les données dans les éléments HTML correspondants
     document.getElementById("test3").innerHTML = location;
     document.getElementById("ptest3").innerHTML = description;
-    temperature.innerHTML = "Température: " + data.main.temp + "°C" + "  (" +data.weather[0].description+ ") ";
+    temperature.innerHTML = "Température: " + data.main.temp + "°C" + " (" +data.weather[0].description+ ") ";
     var iconetemp3 = document.getElementById('imgicone3');
     
     //  iconetemp=data.weather[0].icon ;
