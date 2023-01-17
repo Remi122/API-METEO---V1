@@ -78,17 +78,6 @@ function startTime3() {
 startTime3();
 
 
-function startTime4() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  m = checkTime(m);
-  document.getElementById('heure4').innerHTML =
-  "Aujourd'hui: "+h + ":" + m;
-  var t = setTimeout(startTime, 500);
-}
-startTime4();
-
 
 
 
