@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="/style.css" rel="stylesheet" >
     <link href='https://css.gg/search.css' rel='stylesheet'>
+    <link href='/sauvegarde.html'>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -18,10 +19,18 @@
   <section class="layout">
     
     <div class="header">1
-        <img id="logo" src="/images/logo.png" alt="logo METEO"></img>
+        <a href="/index.html" class="logo" >
+            <img class="logo"alt="texte alternatif pour le lien image" src="images/logo.png"/>
+        </a>
     </div>
    
     <p id="title">API METEO</p>
+    <a href="/sauvegarde.html" class="logo" >
+    <p id="ptitle" > PAGE SAUVEGARDE </a>
+    </p>
+    
+                
+    
     <div class="search-box">
         <!-- Text input -->
         
@@ -52,7 +61,7 @@
                     <footer id="heure4"></footer>
                     <button class="button-with-icon">
                         <!-- Icon -->
-                        <div class="margin-text-button"> Voir la météo pour les prochains jours  </div>
+                        <div class="margin-text-button"> Sauvegarder la météo  </div>
                     
                         <!-- Label -->
                         <div class="button-with-icon__label">...</div>
@@ -71,7 +80,7 @@
                     <footer id="heure3"></footer>
                     <button class="button-with-icon">
                         <!-- Icon -->
-                        <div class="margin-text-button"> Voir la météo pour les prochains jours  </div>
+                        <div class="margin-text-button"> Sauvegarder la météo  </div>
                     
                         <!-- Label -->
                         <div class="button-with-icon__label">...</div>
@@ -80,16 +89,16 @@
                         
                 <article class="card">
                     <header>
-                        <h2 id="test3">Ville: Paris</h2>
+                        <h2 id="test3" >Ville: Paris</h2>
                     </header>
                     <img id="imgicone3" alt="Hot air balloons">
                     <div class="content">
-                        <p id="ptest3"></p>
+                        <p id="ptest3" value=""></p>
                     </div>
                     <footer id="heure2"></footer>
-                    <button class="button-with-icon">
+                    <button id="button-with-icon1">
                         <!-- Icon -->
-                        <div class="margin-text-button"> Voir la météo pour les prochains jours  </div>
+                        <div class="margin-text-button"> Sauvegarder la météo </div>
                     
                         <!-- Label -->
                         <div class="button-with-icon__label">...</div>
@@ -107,7 +116,7 @@
                     <footer id="heure"></footer>
                     <button class="button-with-icon">
                         <!-- Icon -->
-                        <div class="margin-text-button"> Voir la météo pour les prochains jours  </div>
+                        <div class="margin-text-button"> Sauvegarder la météo  </div>
                     
                         <!-- Label -->
                         <div class="button-with-icon__label">...</div>
@@ -120,13 +129,19 @@
 </div>
 
     <div class="footer">3
+        
+    <p id="1test">API METEO BY REMI VINEL</p>
+        
     <p id="title-footer">API METEO BY REMI VINEL</p>
+    <a href="sauvegarde.html">Page 2</a>
     </div>
   </section>
  
   <script src="/js/script.js"></script>
   <script src="/js/lyon.js"></script>
   <script src="/js/paris.js"></script>
-  <script src="/js/toulouse.js"></script>  
+  <script src="/js/toulouse.js"></script> 
+  <script src="/js/localstorage.js"></script>  
+  
   </body>
 </html>

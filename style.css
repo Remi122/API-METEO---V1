@@ -86,19 +86,32 @@
     transform-origin: top right;
    
 }
-  #logo{
-    width: 100px;
+.logo{
+    width: 120px;
     margin: auto;
     margin-top: 10px;
   }
 
-#title {
+#title  {
     text-align: center;
     margin-top: 50px;
     font-size: 30px;
     font-family:Hind;
     color:black;
+    
 }
+
+#ptitle {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+    font-family:Hind;
+    color:black;
+    margin-top: -48px;
+    
+}
+
+
 
 #title-footer{
     color:rgb(250, 249, 249);
@@ -160,6 +173,12 @@ h2, h1, p, img, footer {
     
 }
 
+
+
 .margin-text-button{
     margin-top:10px;
+}
+
+#\31 test {
+    color: rgb(0, 0, 0);
 }
